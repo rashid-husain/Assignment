@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Sat Nov 30 2019 16:38:57 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.html
+* src/app/app.component.ts
+* src/app/component/menu-item/menu-item.component.html
+* src/app/component/menu-item/menu-item.component.ts
+
+
+Created files:
+* .autogit/logs/log-30-10-2019-16-8-51.txt
+* src/app/models/filter.model.ts
+
+
+Deleted files:
+
+
+Renamed files:

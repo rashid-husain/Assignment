@@ -1,0 +1,21 @@
+<div class="menu-list">
+  <mat-expansion-panel
+    *ngFor="let filter of filterOptions; let index = index"
+    class="panel-block"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ filter.name }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <section class="tp-section" *ngFor="let option of filter.options">
+        <mat-checkbox
+          class="tp-margin"
+          (change)="onfilterSelect($event.checked, filter.name, option, index)"
+        ></mat-checkbox>
+        <span class="text-margin">{{ option }}</span>
+      </section>
+    </mat-form-field>
+  </mat-expansion-panel>
+</div>

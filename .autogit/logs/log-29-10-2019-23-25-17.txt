@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Fri Nov 29 2019 23:25:17 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* angular.json
+* src/app/app.component.html
+* src/app/app.component.scss
+* src/app/component/datatable/datatable.component.html
+* src/index.html
+
+
+Created files:
+* .autogit/logs/log-29-10-2019-22-55-11.txt
+
+
+Deleted files:
+
+
+Renamed files:

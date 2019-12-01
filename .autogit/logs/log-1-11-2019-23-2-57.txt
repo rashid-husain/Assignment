@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 01 2019 23:02:57 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.scss
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

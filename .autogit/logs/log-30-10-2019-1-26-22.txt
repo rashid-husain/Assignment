@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sat Nov 30 2019 01:26:22 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.html
+* src/app/app.component.scss
+* src/app/component/datatable/datatable.component.html
+* src/app/component/datatable/datatable.component.scss
+* src/app/component/datatable/datatable.component.ts
+* src/app/component/header/header.component.scss
+
+
+Created files:
+* .autogit/logs/log-30-10-2019-0-26-9.txt
+
+
+Deleted files:
+
+
+Renamed files:

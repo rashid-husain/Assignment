@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sun Dec 01 2019 13:31:55 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.html
+* src/app/app.component.ts
+* src/app/component/menu-item/menu-item.component.html
+* src/app/component/menu-item/menu-item.component.ts
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:

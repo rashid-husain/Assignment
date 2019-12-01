@@ -1,0 +1,15 @@
+<div class="header">
+  <button class="menu" (click)="toggle()">
+    <i class="fa fa-bars fa-2x"></i>
+  </button>
+  <div class="header-right">
+    <div class="search-employee">
+      <span class="fa fa-search"></span>
+      <input
+        placeholder="Search employee name ..."
+        [(ngModel)]="employeeName"
+        (keyup)="globalFilter()"
+      />
+    </div>
+  </div>
+</div>

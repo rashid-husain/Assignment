@@ -1,0 +1,107 @@
+<mat-card>
+  <mat-card-header> </mat-card-header>
+  <app-header
+    (globalSearch)="searchEmployeeByName($event)"
+    (toggleClick)="toggleClicked = !toggleClicked"
+  ></app-header>
+  <mat-card-content>
+    <mat-sidenav-container #matDrawer style="min-height: 600px;">
+      <mat-sidenav
+        *ngIf="toggleClicked"
+        #sidenav
+        mode="side"
+        opened
+        class="mat-sidenav-block"
+      >
+        <app-menu-item
+          [filterOptions]="filterOptions"
+          (selectedFilter)="onFilterSelection($event)"
+        ></app-menu-item>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <main class="content">
+          <app-datatable [rows]="selectedRow"></app-datatable>
+        </main>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </mat-card-content>
+  <mat-card-actions>
+    <!--PAgination Start here ... -->
+    <footer>
+      <div class="element-position">
+        <ul
+          style="display: block;"
+          class="pagination"
+          type="none"
+          *ngIf="pager.pages && pager.pages.length"
+        >
+          <li>
+            <div>
+              <span>Row Per Page:</span>
+              <select
+                class="element-dropdown"
+                [(ngModel)]="perPageValue"
+                (change)="setPerPage(1)"
+              >
+                <option> Select </option>
+                <option value="10"> 10 </option>
+                <option value="25"> 25 </option>
+                <option value="50"> 50 </option>
+                <option value="100"> 100 </option>
+              </select>
+            </div>
+          </li>
+
+          <li class="page-item px-2">
+            <span>Page: </span>
+            <!-- <input
+              class="form-control"
+              (keyup)="setPerPage(selectedPage)"
+              (change)="setPerPage(selectedPage)"
+              [(ngModel)]="selectedPage"
+              type="number"
+              min="1"
+              [max]="pager.totalPages"
+            /> -->
+            <span> {{ selectedPage }} of {{ pager.totalPages }}</span>
+          </li>
+
+          <li
+            class="page-item ml-3"
+            [ngClass]="{ disabled: pager.currentPage === 1 }"
+            [ngStyle]="{
+              cursor: pager.currentPage === 1 ? 'not-allowed' : 'pointer'
+            }"
+          >
+            <a
+              class="page-link"
+              title="Previous"
+              (click)="setPerPage(pager.currentPage - 1)"
+            >
+              <fa name="angle-left"></fa>
+            </a>
+          </li>
+
+          <li
+            class="page-item"
+            [ngClass]="{ disabled: pager.currentPage === pager.totalPages }"
+            [ngStyle]="{
+              cursor:
+                pager.currentPage === pager.totalPages
+                  ? 'not-allowed'
+                  : 'pointer'
+            }"
+          >
+            <a
+              class="page-link"
+              title="Next"
+              (click)="setPerPage(pager.currentPage + 1)"
+            >
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Mon Dec 02 2019 00:03:09 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* angular.json
+* package-lock.json
+* package.json
+* src/app/app.module.ts
+* src/index.html
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
