@@ -54,16 +54,10 @@
 
           <li class="page-item px-2">
             <span>Page: </span>
-            <!-- <input
-              class="form-control"
-              (keyup)="setPerPage(selectedPage)"
-              (change)="setPerPage(selectedPage)"
-              [(ngModel)]="selectedPage"
-              type="number"
-              min="1"
-              [max]="pager.totalPages"
-            /> -->
-            <span> {{ selectedPage }} of {{ pager.totalPages }}</span>
+            <span>
+              {{ pager.startIndex + 1 }} - {{ pager.endIndex + 1 }} of
+              {{ pager.totalItems }}</span
+            >
           </li>
 
           <li
